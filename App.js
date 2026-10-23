@@ -13,6 +13,10 @@ const VIDEOS = {
 function App() {
 	const [src, setSrc] = useState(VIDEOS.fast);
 
+	const onSelectVideoHandler = (newVideo) => {
+    	setSrc(VIDEOS[newVideo])
+  	};
+
 	return (
       <div>
         <h1>Video Player</h1>
